@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="lx">lws男票A</button>
+    <button id="zyc">lws男票B</button>
+    <br>
+    <img src="C:\Users\廖二\Desktop\picture\lixian.jpg">
+
+    <script>
+    
+        // 修改元素属性 src
+        // 1.获取元素
+
+        var lx = document.getElementById("lx")
+        var zyc = document.getElementById("zyc")
+        var img = document.querySelector("img")
+
+        // 2.注册事件 3.处理程序
+        lx.onclick = function(){
+            img.src = "C:\\Users\\廖二\\Desktop\\picture\\lixian.jpg"
+        } 
+        zyc.onclick = function(){
+            img.src = "C:\\Users\\廖二\\Desktop\\picture\\zyc.jpg"
+        }
+        // 、\ 会被转义，应使用\\或/
+
+
+    </script>
+</body>
+</html>

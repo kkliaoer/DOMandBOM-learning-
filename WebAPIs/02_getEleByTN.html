@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>小时不识月，呼作白玉盘1</li>
+        <li>小时不识月，呼作白玉盘2</li>
+        <li>小时不识月，呼作白玉盘3</li>
+        <li>小时不识月，呼作白玉盘4</li>
+        <li>小时不识月，呼作白玉盘5</li>
+        <li>小时不识月，呼作白玉盘6</li>
+    </ul> 
+    <ol id="ol">
+        <li>又疑瑶台镜，飞在青云端</li>
+        <li>又疑瑶台镜，飞在青云端</li>
+        <li>又疑瑶台镜，飞在青云端</li>
+        <li>又疑瑶台镜，飞在青云端</li>
+        <li>又疑瑶台镜，飞在青云端</li>
+        <li>又疑瑶台镜，飞在青云端</li>
+         
+    </0l>
+
+    <script>
+    // 返回的是获取过来元素对象的集合，以伪数组的形式存储的。
+        var x = document.getElementsByTagName("li")
+        console.log(x)
+        console.log(x[0])
+        
+    //可采取遍历的方式依次打印里面的元素对象
+    for(var i = 0; i < x.length; i++){
+        console.log(x[i])
+    } 
+    
+    //指定父元素 element.getElementsByTagName("标签名"),父元素必须为指定单个元素
+    // var ol = document.getElementsByTagName("ol")  [ol]
+    var ol = document.getElementById("ol")
+    console.log(ol.getElementsByTagName("li"))
+
+        
+    </script>
+</body>
+</html>
